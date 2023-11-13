@@ -34,20 +34,32 @@
                 Регистрация
                 <span class="underline"></span>
             </button>
-            <form class="form form-signup">
+            <form action="PHP/regist.php" class="form form-signup" method="post">
                 <fieldset>
                     <legend>Please, enter your email, password and password confirmation for sign up.</legend>
                     <div class="input-block">
-                        <label for="signup-email">E-mail</label>
-                        <input id="signup-email" type="email" required>
+                        <label >Имя: </label>
+                        <input  type="text" name="UserName">
                     </div>
                     <div class="input-block">
-                        <label for="signup-password">Пароль</label>
-                        <input id="signup-password" type="password" required>
+                        <label >Фамилия: </label>
+                        <input  type="text" name="UserLastName">
                     </div>
                     <div class="input-block">
-                        <label for="signup-password-confirm">Повторите пароль</label>
-                        <input id="signup-password-confirm" type="password" required>
+                        <label >Телефон: </label>
+                        <input  type="number" name="UserPhone">
+                    </div>
+                    <div class="input-block">
+                        <label >E-mail: </label>
+                        <input  type="email" name="UserEmail">
+                    </div>
+                    <div class="input-block">
+                        <label >Пароль: </label>
+                        <input  type="password" name="UserPassword">
+                    </div>
+                    <div class="input-block">
+                        <label >Дата Рождения: </label>
+                        <input  type="date" name="BirthDate">
                     </div>
                 </fieldset>
                 <button type="submit" class="btn-signup">Продолжить</button>
