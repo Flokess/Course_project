@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,16 +14,16 @@
                 Авторизация
                 <span class="underline"></span>
             </button>
-            <form class="form form-login">
+            <form action="PHP/auth.php" class="form form-login" method="post">
                 <fieldset>
                     <legend>Please, enter your email and password for login.</legend>
                     <div class="input-block">
                         <label for="login-email">E-mail</label>
-                        <input id="login-email" type="email" required>
+                        <input id="login-email" type="email" name="login-email">
                     </div>
                     <div class="input-block">
                         <label for="login-password">Пароль</label>
-                        <input id="login-password" type="password" required>
+                        <input id="login-password" type="password" name="login-password">
                     </div>
                 </fieldset>
                 <button type="submit" class="btn-login">Войти</button>
