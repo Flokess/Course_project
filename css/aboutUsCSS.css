@@ -294,3 +294,60 @@ a {
 .contentaboutus{
     text-align: center;
 }
+.button{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid white;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: dimgray;
+}
+
+
+
+
+
+
+
+
+
+.text-with-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-block {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.image-block {
+    flex-basis: 30%; /* Adjust the width of the image block */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-block img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Add rounded corners to the images */
+}
+
+
+
+
+
+
