@@ -19,6 +19,7 @@ main h1{
      display: flex;
      gap: 30px;
      padding: 20px;
+
      /* Removed height property */
  }
 
@@ -28,6 +29,8 @@ main h1{
     gap: 20px;
     justify-content: left; /* Align items to the left */
     align-items: flex-start; /* Align items to the start of the flex container */
+    margin: 0;
+    padding: 0;
 }
 
 .descReviewItem h3 {
@@ -97,4 +100,15 @@ main h1{
 .star.active,
 .star.active ~ .star {
     color: gold;
+}
+
+.emoji.active {
+    transform: scale(1.2); /* Пример: увеличим активное эмодзи */
+}
+.Ava{
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
 }

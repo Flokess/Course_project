@@ -26,6 +26,26 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+        const emojis = document.querySelectorAll('.emoji');
+        const rating = document.getElementById('ratingStars');
+
+        emojis.forEach(emoji => {
+                emoji.addEventListener('click', function() {
+                        const value = this.dataset.value;
+                        rating.dataset.rating = value;
+                        emojis.forEach(e => {
+                                const eValue = e.dataset.value;
+                                if (eValue === value) {
+                                        e.classList.add('active');
+                                } else {
+                                        e.classList.remove('active');
+                                }
+                        });
+                });
+        });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
         const stars = document.querySelectorAll('.star');
         const rating = document.getElementById('ratingStars');
 
