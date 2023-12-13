@@ -68,7 +68,7 @@
         <button id="writeReviewButton" class="writeReviewButton">Написать отзыв</button>
 
 
-        <form id="reviewForm" class="reviewForm" style="display: none;" action="/Course_project/PHP/Reviews_Script.php" method="post" enctype="multipart/form-data">
+        <form id="reviewForm" class="reviewForm" style="display: none;" action="PHP/Reviews_Script.php" method="post" enctype="multipart/form-data">
             <label for="userName">Имя:</label><br>
             <input type="text" id="userName" name="userName"><br><br>
             <label for="userName">Выбрать аватар:</label><br>

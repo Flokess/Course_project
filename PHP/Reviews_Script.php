@@ -21,11 +21,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     move_uploaded_file($_FILES["image"]["tmp_name"], $targetFile);
 
     // SQL-запрос для добавления отзыва в базу данных
-    $sql = "INSERT INTO Reviews (User_Name, Image, 	review_text) VALUES ('$userName', '$targetFile', '$reviewText')";
+    $sql = "INSERT INTO Reviews (User_Name,Image,review_text) VALUES ('$userName', '$targetFile', '$reviewText')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Отзыв успешно добавлен в базу данных";
-        header("location: http://coursach/Course_project/Reviews.html");
+        header("location: http://localhost/course_melekhin/Course_project/Reviews.php");
     } else {
         echo "Ошибка: " . $sql . "<br>" . $conn->error;
     }

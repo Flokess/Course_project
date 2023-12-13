@@ -28,7 +28,7 @@ if ($result->num_rows > 0) {
     if (password_verify($userPassword, $hashedPassword)) {
         // Пароль верный, авторизация успешна
         echo "Авторизация успешна!";
-        header("Location: http://coursach/Course_project/main.html");
+        header("Location: http://localhost/course_melekhin/Course_project/main.html");
     } else {
         // Пароль неверный
         echo "Неверный пароль. Попробуйте еще раз.";
